@@ -313,6 +313,12 @@ div.formWrap i {
   left: 92%;
   color: gray;
 }
+div.formWrap .svg-inline--fa {
+  position: absolute;
+  margin-top: -12%;
+  left: 92%;
+  color: gray;
+}
 
 div.formWrap2 {
   display: inline;
@@ -329,6 +335,12 @@ div.formWrap2 input[type="text"] {
 
 /* Input icon position setting */
 div.formWrap2 i {
+  position: absolute;
+  margin-top: 7%;
+  left: 55%;
+  color: gray;
+}
+div.formWrap2 .svg-inline--fa {
   position: absolute;
   margin-top: 7%;
   left: 55%;
@@ -516,7 +528,7 @@ i:before {
 
 /* -----OUR SERVICES SECTION----- */
 div.ourServices {
-  padding: 100px 0;
+  padding: 100px 0 25px 0;
 }
 
 div.ourServices h2 {
@@ -615,4 +627,163 @@ div.cardIcon .cardSmallCircle {
   height: 0.83em;
   background: #f8f0b2;
   border-radius: 50%;
+}
+
+
+
+/* -----APP DOWNLOAD SECTION----- */
+div.appDownloadSection {
+  position: relative;
+  display: flex;
+  padding: 28px 0;
+  /* color: #fff; */
+  background-color: #313539;
+  max-height: 676px;
+  overflow: hidden;
+}
+
+div.appDownloadSection .appDownloadSectionLeft {
+  color: #fff;
+  /* text-transform: uppercase; */
+  padding: 6% 7%;
+  letter-spacing: 1px;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* visibility: hidden; */
+}
+div.appDownloadSection .appDownloadSectionLeft h2 {
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 700;
+
+}
+div.appDownloadSectionLeft .container {
+  padding: 20px 0;
+  font-size: 18px;
+}
+div#details,div#howItWorks p,ul,li {
+  line-height: 30px;
+  color: rgba(255,255,255,.8);
+}
+
+div.appDownloadSection .appDownloadSectionRight {
+  /* background-image: url("../images/frame-1-533x868.png"); */
+  padding: 5%;
+  background-repeat: no-repeat;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  /* visibility: hidden; */
+}
+
+
+/* -----PRICE SECTION----- */
+div.priceSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8% 0;
+}
+
+div.priceSection h3 {
+  /* text-align: center; */
+  font-size: 27px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: rgba(0,0,0,0.8);
+}
+
+div.priceSection p {
+  font-size: 20px;
+  color: #4b9ab7;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+div.priceSection .col-sm-4::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(circle, #d9dde3 0%, #fff 100%);
+  width: 3px;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+/* -----TESTIMONIALS----- */
+div.testimonials {
+  position: relative;
+  padding: 5% 0 5% 0;
+  letter-spacing: 1px;
+}
+
+div.testimonials h2 {
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 700;
+  text-align: center;
+}
+div.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 0; */
+}
+
+div.messageBox {
+  padding: 20px;
+  box-shadow: 1px 9px 18px 5px rgba(81,81,91,0.5);
+}
+div.messageBox::after {
+  position: absolute;
+  content: '';
+  border-width: 22px 68px 0 0;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  top:0;
+  bottom: -22;
+  left: 62px;
+  width: 0;
+  height: 0;
+}
+
+div.clientInfo {
+  display: flex;
+  padding: 20px 30px;
+}
+div.clientPhoto img {
+  border-radius: 50%;
+}
+div.clientNameType {
+  margin: 10px 0 0 15px;
+}
+div.clientNameType h6,p {
+  font-size: 17px;
+
+  /* text-align: center; */
+  /* text-align: center; */
+
+}
+div.clientNameType h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div.clientNameType p {
+  font-weight: 500;
+  color: #4b9ab7;
+}
+
+div.clientMessage {
+  /* display: flex; */
+  padding: 20px 30px;
+
+}
+div.textMessage {
+  text-align: justify;
 }

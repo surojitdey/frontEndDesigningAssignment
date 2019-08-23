@@ -6,13 +6,13 @@ $(function() {
     // var scroll = background.position();
 
 
-    if (scroll >= 50) {
+    if (scroll >= 1) {
+      nav_bar.addClass('pullDown');
       nav_bar.addClass('navBarStuck');
-      nav_bar.addClass('slideDown');
     }
-    else if(scroll <= 50) {
+    else if(scroll < 1) {
+      nav_bar.removeClass('pullDown');
       nav_bar.removeClass('navBarStuck');
-      nav_bar.removeClass('slideDown');
     }
   });
 });
@@ -59,6 +59,29 @@ $(window).scroll(function() {
 		var topOfWindow = $(window).scrollTop();
 			if (headerPos > topOfWindow+1280) {
 				$(this).addClass("slideUp");
+			}
+		});
+	});
+
+
+
+$(window).scroll(function() {
+		$('.appDownloadSectionLeft').each(function(){
+		var headerPos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (headerPos > topOfWindow+1400) {
+				$(this).addClass("stretchLeft");
+			}
+		});
+	});
+$(window).scroll(function() {
+		$('.appDownloadSectionRight').each(function(){
+		var headerPos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (headerPos > topOfWindow+1400) {
+				$(this).addClass("stretchRight");
 			}
 		});
 	});
